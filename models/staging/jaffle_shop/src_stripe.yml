@@ -2,7 +2,7 @@ version: 2
  
 sources:
   - name: stripe
-    database: "{{env_var('DBT_GCPPROJECT')}}"
+    database: devodk-dbt-raw
     schema: stripe
     tables:
       - name: payment

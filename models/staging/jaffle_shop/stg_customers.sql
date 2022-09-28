@@ -3,4 +3,4 @@ select
     first_name,
     last_name
  
-from {{env_var('DBT_GCPPROJECT')}}.jaffle_shop.customers
+from {{ source('jaffle_shop', 'customers') }}
