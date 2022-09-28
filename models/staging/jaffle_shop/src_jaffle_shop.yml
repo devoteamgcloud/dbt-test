@@ -2,7 +2,7 @@ version: 2
  
 sources:
   - name: jaffle_shop
-    database: "{{env_var('DBT_GCPPROJECT')}}"
+    database: "devodk-dbt-raw"
     schema: jaffle_shop
     tables:
       - name: customers
