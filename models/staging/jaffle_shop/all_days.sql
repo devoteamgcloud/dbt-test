@@ -1,3 +1,4 @@
+{{ config(schema='staging') }}
 {{ config (
     materialized="table"
 )}}
