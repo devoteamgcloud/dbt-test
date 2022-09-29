@@ -1,4 +1,4 @@
-{{ config(schema='marketing') }}
+{{ config(schema='finance') }}
 with orders as  (
     select * from {{ ref('stg_orders' )}}
 ),
