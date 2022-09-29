@@ -45,7 +45,8 @@ models:
   jaffle_shop:
     marts:
       +materialized: table
- 
+
+
 on-run-start:
   - >
     CREATE TABLE IF NOT EXISTS `{{env_var('DBT_GCPPROJECT')}}.temp.dbt_log`
