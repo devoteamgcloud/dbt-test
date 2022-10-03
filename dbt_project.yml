@@ -46,6 +46,18 @@ models:
     marts:
       +materialized: table
 
+models:
+  marts:
+    commercial:
+      expose:
+        +schema: 'marketing'
+
+models:
+  marts:
+    finance:
+      expose:
+        +schema: 'finance'
+
 
 on-run-start:
   - >
