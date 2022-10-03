@@ -1,4 +1,3 @@
-{{ config(schema='staging') }}
 
 select
     id as order_id,
