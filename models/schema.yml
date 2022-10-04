@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: first_name
+        policy_tags: 
+        - projects/devodk-dbt-dev/locations/us/taxonomies/5742960599323276379/policyTags/3509415091753028
+        description: First name of the customer
+        

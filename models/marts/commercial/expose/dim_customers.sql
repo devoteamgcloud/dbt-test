@@ -1,4 +1,9 @@
 
+{{ config(
+  persist_docs={"relation": true, "columns": true},
+  labels = {'contains_pii': 'yes'}
+) }}
+
 with customers as (
     select * from {{ ref('stg_customers')}}
 ),
