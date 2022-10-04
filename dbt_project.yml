@@ -39,11 +39,12 @@ models:
         expose:
           +schema: 'commercial'
           +materialized: table
+          +persist_docs:
+            relation: true
+            columns: true
     staging:
       +schema: 'staging'
     
-
-
 
 on-run-start:
   - >
